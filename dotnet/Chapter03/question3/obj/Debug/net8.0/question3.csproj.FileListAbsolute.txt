@@ -1,0 +1,15 @@
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/bin/Debug/net8.0/question3
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/bin/Debug/net8.0/question3.deps.json
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/bin/Debug/net8.0/question3.runtimeconfig.json
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/bin/Debug/net8.0/question3.dll
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/bin/Debug/net8.0/question3.pdb
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/question3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/question3.AssemblyInfoInputs.cache
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/question3.AssemblyInfo.cs
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/question3.csproj.CoreCompileInputs.cache
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/question3.sourcelink.json
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/question3.dll
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/refint/question3.dll
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/question3.pdb
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/question3.genruntimeconfig.cache
+/Users/aniketmajety/Desktop/antra-hw/dotnet/Chapter03/question3/obj/Debug/net8.0/ref/question3.dll
