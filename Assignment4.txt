@@ -1,0 +1,192 @@
+
+1. Describe the problem generics address.
+Generics solve the problem of code duplication and type safety, letting you write reusable classes and methods that work with any type without needing casting.
+
+2. How would you create a list of strings, using the generic List class?
+List<string> list = new List<string>();
+
+3. How many generic type parameters does the Dictionary class have?
+2
+
+4. True/False. When a generic class has multiple type parameters, they must all match.
+False
+
+5. What method is used to add items to a List object?
+Add
+6. Name two methods that cause items to be removed from a List.
+Remove
+RemoveAt
+7. How do you indicate that a class has a generic type parameter?
+By adding a type parameter to the class name, e.g., class SampleClass<T> {}
+8. True/False. Generic classes can only have one generic type parameter.
+False
+9. True/False. Generic type constraints limit what can be used for the generic type.
+True
+10. True/False. Constraints let you use the methods of the thing you are constraining to.
+True
+
+
+Practice Problems
+1.
+
+public class MyStack<T>
+{
+    private List<T> items = new List<T>();
+    
+    public int Count => items.Count;
+    
+    public void Push(T item)
+    {
+        items.Add(item);
+    }
+    
+    public T Pop()
+    {
+        if (items.Count == 0)
+        {
+            throw new InvalidOperationException("Stack is empty");
+        }
+        
+        T item = items[items.Count - 1];
+        items.RemoveAt(items.Count - 1);
+        return item;
+    }
+}
+
+
+2. 
+
+
+public class MyList<T>
+{
+    private T[] _items;
+    private int _count;
+
+    public MyList()
+    {
+        _items = new T[4]; 
+        _count = 0;
+    }
+
+    public void Add(T element)
+    {
+        EnsureCapacity();
+        _items[_count++] = element;
+    }
+
+    public T Remove(int index)
+    {
+        ValidateIndex(index);
+
+        T removed = _items[index];
+
+        for (int i = index; i < _count - 1; i++)
+        {
+            _items[i] = _items[i + 1];
+        }
+
+        _count--;
+        return removed;
+    }
+
+    public bool Contains(T element)
+    {
+        for (int i = 0; i < _count; i++)
+        {
+            if (Equals(_items[i], element))
+                return true;
+        }
+        return false;
+    }
+
+    public void Clear()
+    {
+        _items = new T[4];
+        _count = 0;
+    }
+
+    public void InsertAt(T element, int index)
+    {
+        if (index < 0 || index > _count)
+            throw new ArgumentOutOfRangeException(nameof(index));
+
+        EnsureCapacity();
+
+        for (int i = _count; i > index; i--)
+        {
+            _items[i] = _items[i - 1];
+        }
+
+        _items[index] = element;
+        _count++;
+    }
+
+    public void DeleteAt(int index)
+    {
+        Remove(index); 
+    }
+    public T Find(int index)
+    {
+        ValidateIndex(index);
+        return _items[index];
+    }
+
+    public int Count()
+    {
+        return _count;
+    }
+
+    private void EnsureCapacity()
+    {
+        if (_count == _items.Length)
+        {
+            Array.Resize(ref _items, _items.Length * 2);
+        }
+    }
+
+    private void ValidateIndex(int index)
+    {
+        if (index < 0 || index >= _count)
+            throw new ArgumentOutOfRangeException(nameof(index));
+    }
+}
+
+
+
+3. 
+
+public class GenericRepository<T> : IRepository<T> where T : class, Entity
+{
+    protected readonly List<T> _dataStore = new List<T>();
+
+    public void Add(T item)
+    {
+        if (item == null)
+            throw new ArgumentNullException(nameof(item));
+
+        _dataStore.Add(item);
+    }
+
+    public void Remove(T item)
+    {
+        if (item == null)
+            throw new ArgumentNullException(nameof(item));
+
+        _dataStore.Remove(item);
+    }
+
+    public void Save()
+    {
+        Console.WriteLine("Changes saved to data source.");
+    }
+
+    public IEnumerable<T> GetAll()
+    {
+        return _dataStore;
+    }
+
+    public T GetById(int id)
+    {
+        return _dataStore.FirstOrDefault(e => e.Id == id);
+    }
+}
