@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antra Business Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f0f0f0;
+        }
+        
+        .outer-table {
+            border: 3px double #000;
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 600px;
+            height: 300px;
+        }
+        
+        .left-cell {
+            width: 40%;
+            border-right: 3px double #000;
+            text-align: center;
+            vertical-align: middle;
+            padding: 20px;
+            background-color: white;
+        }
+        
+        .right-cell {
+            width: 60%;
+            padding: 20px;
+            vertical-align: middle;
+            background-color: white;
+        }
+        
+        .inner-container {
+            border: 3px double #000;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .software-section {
+            flex: 1;
+            border-bottom: 3px double #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        
+        .developer-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        
+        .antra-logo {
+            font-size: 36px;
+            font-weight: normal;
+            color: #333;
+        }
+        
+        .antra-triangle {
+            color: #0ea5e9;
+            font-size: 42px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table class="outer-table">
+        <tr>
+            <td class="left-cell">
+                <div style="display: flex; align-items: center;">
+                <a href="https://antra.net/">
+                    <img src="./images/antra-logo.png" alt="Antra Logo" style="max-width: 100%; height: auto;">
+                </a>
+                <h1>Antra</h1>
+                </div>
+            </td>
+            <td class="right-cell">
+                <div class="inner-container">
+                    <div class="software-section">
+                        Software
+                    </div>
+                    <div class="developer-section">
+                        Developer
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
