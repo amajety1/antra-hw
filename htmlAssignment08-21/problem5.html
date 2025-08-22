@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antra LIFE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f0f0f0;
+        }
+        
+        .main-table {
+            border: 2px solid #000;
+            border-collapse: collapse;
+            width: 600px;
+            height: 500px;
+        }
+        
+        .main-table td {
+            border: 3px solid #333;
+            padding: 15px;
+            background: linear-gradient(145deg, #e6e6e6, #c0c0c0);
+            color: #0066cc;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: inset 2px 2px 5px rgba(255,255,255,0.7), 
+                        inset -2px -2px 5px rgba(0,0,0,0.3),
+                        2px 2px 8px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+        }
+        
+        .main-table td:hover {
+            background: linear-gradient(145deg, #f0f0f0, #d0d0d0);
+            box-shadow: inset 1px 1px 3px rgba(255,255,255,0.8), 
+                        inset -1px -1px 3px rgba(0,0,0,0.4),
+                        3px 3px 10px rgba(0,0,0,0.3);
+            transform: translateY(-1px);
+        }
+        
+        .header-cell {
+            font-size: 32px;
+            font-weight: bold;
+            height: 60px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .google-github-row {
+            height: 80px;
+        }
+        
+        .main-table .google-cell {
+            width: 50%;
+            font-size: 24px;
+        }
+        
+        .main-table .github-cell {
+            width: 50%;
+            font-size: 24px;
+        }
+        
+        .middle-row {
+            height: 120px;
+        }
+        
+        .main-table .fb-cell {
+            width: 25%;
+            font-size: 20px;
+        }
+        
+        .main-table .gmail-cell {
+            width: 25%;
+            font-size: 20px;
+        }
+        
+        .main-table .youtube-cell {
+            width: 25%;
+            font-size: 20px;
+        }
+        
+        .main-table .game-2048-cell {
+            width: 25%;
+            font-size: 20px;
+        }
+        
+        .nested-2048 {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+        
+        .nested-2048 td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        .youtube-2048-top {
+            height: 50%;
+        }
+        
+        .game-2048-bottom {
+            height: 50%;
+        }
+        
+        .food-social-row {
+            height: 100px;
+        }
+        
+        .main-table .food-cell {
+            width: 25%;
+            font-size: 20px;
+        }
+        
+        .main-table .game-cell {
+            width: 25%;
+            font-size: 20px;
+        }
+        
+        .social-life-cell, .sleep-cell {
+            width: 25%;
+            font-size: 20px;
+        }
+        
+        .beer-wc-row {
+            height: 80px;
+        }
+        
+        .beer-cell {
+            font-size: 20px;
+        }
+        
+        .wc-cell {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table class="main-table">
+        <tr>
+            
+            <td colspan="4" class="header-cell">Antra LIFE</td>
+        </tr>
+        
+        <tr class="google-github-row">
+            <td colspan="2" class="google-cell">Google</td>
+            <td colspan="2" class="github-cell">GitHub</td>
+        </tr>
+        
+        <tr class="middle-row">
+            <td class="fb-cell">FB</td>
+            <td class="gmail-cell">GMail</td>
+            <td class="youtube-cell">YouTube</td>
+            <td class="game-2048-cell">2048</td>
+        </tr>
+        
+        <tr class="food-social-row">
+            <td class="food-cell">Food</td>
+            <td class="game-cell">Game</td>
+            <td class="social-life-cell">Social Life</td>
+            <td class="sleep-cell">Sleep</td>
+        </tr>
+        
+        <tr class="beer-wc-row">
+            <td colspan="2" class="beer-cell">Beer ></td>
+            <td colspan="2" class="wc-cell">WC</td>
+        </tr>
+    </table>
+</body>
+</html>
