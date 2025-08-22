@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antra Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+        
+        .main-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 40px 0 0 0;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        
+        .corporate-office {
+            line-height: 1.6;
+        }
+        
+        .corporate-office p {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .footer-menu {
+            list-style: none;
+        }
+        
+        .footer-menu li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-menu a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-menu a:hover {
+            color: #fff;
+        }
+        
+        .locations-section {
+            position: relative;
+        }
+        
+        .world-map {
+            width: 100%;
+            height: 150px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><rect width="400" height="200" fill="%23444"/><circle cx="80" cy="80" r="3" fill="%2300bcd4"/><circle cx="320" cy="60" r="3" fill="%2300bcd4"/><circle cx="200" cy="100" r="3" fill="%2300bcd4"/><circle cx="150" cy="120" r="3" fill="%2300bcd4"/><circle cx="280" cy="140" r="3" fill="%2300bcd4"/></svg>') no-repeat center;
+            background-size: contain;
+            border-radius: 4px;
+        }
+        
+        .copyright-section {
+            border-top: 1px solid #444;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .copyright-text {
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icon {
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            opacity: 0.7;
+        }
+        
+        .facebook-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 4px;
+        }
+        
+        .facebook-section h4 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-sections {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .copyright-section {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="main-content">
+        <h1>Welcome to Antra</h1>
+        <p>Professional training and development programs.</p>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sections">
+                <!-- Corporate Office Section -->
+                <section class="footer-section corporate-office">
+                    <h3>Corporate Office</h3>
+                    <p>21355 Ridgetop Circle</p>
+                    <p>Suite #300</p>
+                    <p>Dulles, VA 20166</p>
+                    <p><br></p>
+                    <p>Ph: 703.994.4545</p>
+                    <p>email: info@antra.net</p>
+                </section>
+                
+                <!-- Services Section -->
+                <section class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#technology-services">Technology Services</a></li>
+                        <li><a href="#business-advisory">Business Advisory Services</a></li>
+                        <li><a href="#professional-services">Professional Services</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </section>
+                
+                <!-- Resources Section -->
+                <section class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#white-papers">White Papers</a></li>
+                        <li><a href="#technology-resources">Technology Resources</a></li>
+                        <li><a href="#tech-trends">Top Technology Trends 2017</a></li>
+                        <li><a href="#agile-transformations">Agile Transformations</a></li>
+                        <li><a href="#web-mobile-dev">Web & Mobile Application Development</a></li>
+                    </ul>
+                </section>
+                
+                <!-- Our Locations Section -->
+                <section class="footer-section locations-section">
+                    <h3>Our Locations</h3>
+                    <div class="world-map"></div>
+                    
+                    <!-- Facebook Like Box Section -->
+                    <div class="facebook-section">
+                        <h4>Follow Us on Facebook</h4>
+                        <div id="fb-root"></div>
+                        <div class="fb-page" 
+                             data-href="https://www.facebook.com/antratech" 
+                             data-tabs="timeline" 
+                             data-width="300" 
+                             data-height="200" 
+                             data-small-header="true" 
+                             data-adapt-container-width="true" 
+                             data-hide-cover="false" 
+                             data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/antratech" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/antratech">Antra</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Copyright Section -->
+            <div class="copyright-section">
+                <p class="copyright-text">© 2017 Antra, Inc. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/antratech" class="social-icon">
+                        <img src="./images/facebook.png" alt="Facebook" width="20" height="20">
+                    </a>
+                    <a href="https://twitter.com/antratech" class="social-icon">
+                        <img src="./images/twitter.png" alt="Twitter" width="20" height="20">
+                    </a>
+                    <a href="https://linkedin.com/company/antra" class="social-icon">
+                        <img src="./images/linkedin-logo.png" alt="LinkedIn" width="20" height="20">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
